@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Set layout_width to wrap_content and maxWidth to 488dp to ensure EditText does not exceed recommended Material Design width -->
+    <EditText
+        android:id="@+id/editTextWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hint_enter_url"
+        android:inputType="textUri"
+        android:maxWidth="488dp"
+        android:textColorHint="@color/hint_color" />
+
+    <Button
+        android:id="@+id/buttonWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/button_open_website"
+        android:textSize="16sp" />
+
+    <!-- Set layout_width to wrap_content and maxWidth to 488dp to ensure EditText does not exceed recommended Material Design width -->
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hint_enter_location"
+        android:inputType="text"
+        android:maxWidth="488dp"
+        android:textColorHint="@color/hint_color" />
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/button_open_location"
+        android:textSize="16sp" />
+
+    <!-- Set layout_width to wrap_content and maxWidth to 488dp to ensure EditText does not exceed recommended Material Design width -->
+    <EditText
+        android:id="@+id/editTextShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hint_enter_share_text"
+        android:inputType="text"
+        android:maxWidth="488dp"
+        android:textColorHint="@color/hint_color" />
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/button_share_text"
+        android:textSize="16sp" />
+</LinearLayout>
